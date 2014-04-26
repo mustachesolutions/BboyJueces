@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <!-- Adaptar a la version movil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=no">    
+        <!-- Archivos necesarios para trabajar con el framework -->
+    <link rel="stylesheet" type="text/css" href="../jqm/jquery.mobile-1.4.2.css">
+    <script type="text/javascript" src="../jquery-2.1.0.min.js"></script>    
+    <script type="text/javascript" src="../jqm/jquery.mobile-1.4.2.js"></script>           
+    </head>
+    
+    <body>
+        <div data-role="page" id="pagina1" >
+            
+            <!-- CABECERA -->
+                <!--CREACION DE BOTONES DE OPCIONES PRINCIPALES-->
+                    <!-- Todo lo que va despues del data-position="fixed" queda fijo y en el orden en que se define en el html va desde la parte de                             arriba del header hasta abajo-->
+             <div data-role="header" data-theme="b" data-position="fixed">
+            <h1>CABECERA DE PAGINA</h1>
+               
+                <a href="#pagina2" data-role="button" data-theme="a" data-inline="true">Pagina 2</a>
+                <a href="#confirmar" data-role="button" data-theme="b" data-inline="true" data-transition="Flip" data-rel="dialog">Eliminar</a>
+                
+           
+                
+             <!-- CREACION DEL NAV BAR-->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="">E</a></li>
+                    <li><a href="">F</a></li>
+                    <li><a href="">G</a></li>
+                    <li><a href="">H</a></li>
+                </ul>    
+                
+            </div>    
+                
+            </div>
+            <!-- CONTENIDO -->
+            <div data-role="content" data-theme="e">
+                <p> Esto es un texto de prueba!!</p>
+                <a href="#pagina2" data-role="button" data-theme="a" data-inline="true">Pagina 2</a>
+                <a href="PaginaExterna2.html" data-role="button" data-theme="b" data-inline="true" data-transition="Slide">Ir al Enlace Externo</a>
+                <a href="#confirmar" data-role="button" data-theme="b" data-inline="true" data-transition="Flip" data-rel="dialog">Eliminar</a>
+            </div>   
+            <!-- PIE DE PAGINA -->
+            <div data-role="footer" data-theme="b" class="ui-bar" data-position="fixed" data-id="pieFijo">
+                <h2>Esto es un pie de pagina</h2>
+                <div data-role="controlgroup" data-type="horizontal">              
+                   <a href="#pagina2" data-role="button" data-theme="a" data-inline="true" data-theme="b" data-icon="plus">Pagina 2</a>
+                   <a href="#confirmar" data-role="button" data-theme="b" data-inline="true" data-transition="Flip" data-rel="dialog" data-icon="delete">Eliminar</a>
+                </div>
+                
+            </div>
+ 
+                
+            
+            </div>    
+            
+        
+<!--INCIO DE PAGINA INTERNA 2-->        
+         <div data-role="page" id="pagina2">
+            
+            <!-- CABECERA -->
+            <div data-role="header" data-theme="b">
+                <h1>PAGINA 2</h1>
+            
+            </div>
+            <!-- CONTENIDO -->
+            <div data-role="content" data-theme="e">
+                <p>WE ARE AT THE PAGE 2 !</p>
+                <a href="#pagina1" data-role="button" data-theme="b">Ir a la pagina principal</a>
+            
+            </div>   
+            <!-- PIE DE PAGINA -->
+            <div data-role="footer" data-theme="b">
+                <h2>Esto es un pie de pagina</h2>
+              </div> 
+            </div>    
+            
+<!--PAGINA INTERNA DE CONFIRMACION-->        
+         <div data-role="page" id="confirmar">
+            
+            <!-- CABECERA -->
+            <div data-role="header" data-theme="b" data-position="fixed">
+                <h1>ELIMINAR</h1>              
+            </div>
+            <!-- CONTENIDO -->
+            <div data-role="content" data-theme="e">
+                <p>Esta seguro que dese eliminar</p>
+                <a href="#pagina1" data-role="button" data-theme="b" data-rel="back">Eliminar</a>
+                <a href="#pagina1" data-role="button" data-theme="b" data-rel="back">Cancelar</a>
+            </div>   
+            
+            
+            </div>           
+        
+       
+    
+    </body>
+
+</html>

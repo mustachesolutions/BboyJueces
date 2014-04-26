@@ -1,0 +1,97 @@
+#cuerpo {
+    height: 88vh;
+    
+}
+
+h3{
+    text-align: center;
+    color: rgb(215, 223, 229);
+   font-family: helvetica;
+    font-style: oblique;  
+    font-size:2em;
+}
+nav{
+	position: relative;
+	top: 10%;
+	left: 3%;
+	z-index: 80;
+}
+li {font-size:20px;margin: 5px 0 0 0;
+
+}
+
+h2.foundationText{
+  
+    color:rgba(10, 216, 81, 0.92);
+}
+h2.creativityText{
+  
+    color:rgba(43, 175, 245, 0.99);
+}
+h2.dynamicsText{
+  
+    color:rgba(234, 123, 12, 0.92);
+}
+h2.executionText{
+  
+    color:rgba(82, 43, 211, 0.99);
+}
+h2.battleText{
+  
+    color:rgba(168, 3, 175, 0.98);
+}
+
+li.dynamicsList{
+    background:rgb(234, 123, 12);
+    color: white;
+}
+
+h2{
+   position: relative;
+    margin-top:1%;
+    margin-bottom: 2%;
+    line-height: 30%;
+    width: inherit;
+    text-align: center;
+    color: rgb(200, 213, 224);
+    font-family: helvetica;
+    font-style: oblique;
+    /*font-size-adjust: auto;  */
+    height: 10%;
+    font-size:20px;
+}
+
+h1{
+   
+   margin-top: 6%;
+   margin-bottom: 7%;
+   line-height:30%;
+    width: inherit;
+    text-align: center;
+    color: #eaeaea;
+    font-family: helvetica;
+    font-style: oblique;
+    font-size: 8.5em;
+    display: block;
+    /*font-size-adjust: auto; */   
+}
+
+img {
+   
+  
+    width  : 12%;
+    height : 8%;
+    display: block;
+    margin: auto;
+}
+
+nota {
+   
+  
+   
+    display: block;
+    margin: auto;
+}
+
+
+

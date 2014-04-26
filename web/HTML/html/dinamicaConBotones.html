@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <!-- Adaptar a la version movil -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0,
+  user-scalable=no">    
+        <!-- Archivos necesarios para trabajar con el framework -->
+    <link rel="stylesheet" type="text/css" href="../jqm/jquery.mobile-1.4.2.css">
+    <script type="text/javascript" src="../jquery-2.1.0.min.js"></script>    
+    <script type="text/javascript" src="../jqm/jquery.mobile-1.4.2.js"></script> 
+        <!-- Archivos para el manejo del boton -->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/touch-dynamics.js"></script> 
+    <link rel="stylesheet" type="text/css" href="../css/estilo-evaluacion-juez.css">
+    </head>
+    
+    <body>
+      <form>
+        <div data-role="page" id="pagina1" >
+            
+            <!-- CABECERA -->
+                <!--CREACION DE BOTONES DE OPCIONES PRINCIPALES-->
+                    <!-- Todo lo que va despues del data-position="fixed" queda fijo y en el orden en que se define en el html va desde la parte de                             arriba del header hasta abajo-->
+             <div data-role="header" 
+                  data-theme="b" 
+                  data-position="fixed"
+                  data-tap-toggle="false">
+                  
+                <a href="#pagina2" data-role="button" data-theme="b" data-icon="back">Atras</a>
+                 <img src="../imagenes/botones/Dynamics/dynamics1.svg"
+         id="boton"  
+         class="botonEfecto"
+         onMouseOver="rolloverDynamics()" 
+         onMouseOut="rolloutDynamics()"
+         onMouseDown="downDynamics()"
+         
+         >
+                <a href="#confirmar" data-role="button" data-theme="b" data-transition="Flip" data-rel="dialog">Opciones</a>   
+                
+            </div>
+            <!-- CONTENIDO -->
+            <div id="cuerpo" data-role="content" 
+                 data-theme="b"
+                 data-position="fixed"      
+                 >
+        <h2 id="h2">Lourdes Autenthics crew</h2>     
+         <input class="nota" href="#confirmar" id="nota5" name="n5" value="5. Excelente" type="submit"/>
+                <input class="nota" href="#confirmar" id="nota4" name="n4" value="4. Bueno" type="submit"/>
+                <input class="nota" href="#confirmar" id="nota3" name="n3" value="3. Normal" type="submit"/>
+                <input class="nota" href="#confirmar" id="nota2" name="n2" value="2. Regular" type="submit"/>
+                <input class="nota" href="#confirmar" id="nota1" name="n1" value="1. Malo" type="submit"/>
+                <input class="nota" href="#confirmar" id="nota0" name="n0" value="0. Sancion" type="submit"/>
+        
+        
+    
+            </div>   
+            <!-- PIE DE PAGINA -->
+            <div data-role="footer" 
+                 data-theme="b" 
+                 class="ui-bar" 
+                 data-position="fixed" 
+                 data-id="pieFijo"
+                 style="text-align:center"
+                 data-tap-toggle="false">
+            <div data-role="controlgroup" 
+                 data-type="horizontal">                      
+            <button href="#confirmar" 
+                    id="nota"
+               data-role="button" 
+               data-theme="b" 
+               data-inline="true" 
+
+               data-rel="dialog" 
+               data-icon="check"
+               type="submit"
+               >Guardar</button>
+                </div>
+                
+            </div>
+ 
+                
+            
+            </div>    
+            
+                      
+        
+      
+    </form>
+    </body>
+
+</html> 
+
+
+
+
+
+
+

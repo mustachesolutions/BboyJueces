@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <!-- Adaptar a la version movil -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0,
+  user-scalable=no">    
+        <!-- Archivos necesarios para trabajar con el framework -->
+    <link rel="stylesheet" type="text/css" href="../jqm/jquery.mobile-1.4.2.css">
+    <script type="text/javascript" src="../jquery-2.1.0.min.js"></script>    
+    <script type="text/javascript" src="../jqm/jquery.mobile-1.4.2.js"></script> 
+        <!-- Archivos para el manejo del boton -->
+    <script type="text/javascript" src="../js/script.js">
+        </script>
+    <script type="text/javascript" src="../js/touch-dynamics.js"></script> 
+    <link rel="stylesheet" type="text/css" href="../css/estilo-evaluacion-juez.css">
+    </head>
+    
+    <body>
+      <form id="myform" data-ajax="false">
+        <div data-role="page" id="pagina1" >
+            
+            <!-- CABECERA -->
+                <!--CREACION DE BOTONES DE OPCIONES PRINCIPALES-->
+                    <!-- Todo lo que va despues del data-position="fixed" queda fijo y en el orden en que se define en el html va desde la parte de                             arriba del header hasta abajo-->
+             <div data-role="header" 
+                  data-theme="b" 
+                  data-position="fixed"
+                  data-tap-toggle="false">
+                  
+                <a href="#pagina2" data-role="button" data-theme="b" data-icon="back">Atras</a>
+                 <img src="../imagenes/botones/Dynamics/dynamics1.svg"
+         id="boton"  
+         class="botonEfecto"
+        
+         
+         >
+               
+                 <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-transition="flip">Opciones</a>
+
+<div data-role="popup" id="popupMenu" data-overlay-theme="b">
+    <ul data-role="listview" data-inset="true" style="width:100%;" data-theme="b">
+        <li><a type="submit" name="e" onclick="submit()">Resultado Categoria</a></li>
+        <li><a data-rel="popup" >Resultados generales</a></li>
+        <li><a >Corregir</a></li>
+        <li><a >Calificar</a></li>
+    </ul>
+</div>
+
+
+
+
+                
+            </div>
+            <!-- CONTENIDO -->
+            <div id="cuerpo" data-role="content" 
+                 data-theme="b"
+                 data-position="fixed"      
+                 >
+                <h2 id="h2">Ganador</h2>
+        <h2 id="h2" class="dynamicsText">Skillerz</h2>
+                <ul data-role="listview">
+        <li  style="background:rgb(30, 30, 30);
+    color:rgba(8, 218, 245, 0.92); font-size: 20px;">Skillerz</li>
+                    
+                    
+  
+        <li>Round 1: 5</li>
+        <li>Round 2: 3</li>
+        <li>Round 3: 2</li>
+        <li>Round 4: 4</li>
+                         
+           
+        <li style="color:rgba(234, 123, 12, 0.92);">Total: 14</li>
+        
+         
+        <li style="background:rgb(30, 30, 30);
+    color:rgba(8, 218, 245, 0.92); font-size: 20px;">San Marcos the Familly Crew</li>
+                
+        <li>Round 1: 5</li>
+        <li>Round 2: 3</li>
+        <li>Round 3: 2</li>
+        <li>Round 4: 3</li>
+         
+        <li style="color:rgba(234, 123, 12, 0.92);">Total: 13</li>
+       
+     </ul>
+            
+            <!-- PIE DE PAGINA -->
+            <div data-role="footer" 
+                 data-theme="b" 
+                 class="ui-bar" 
+                 data-position="fixed" 
+                 data-id="pieFijo"
+                 style="text-align:center"
+                 data-tap-toggle="false">
+            <div data-role="controlgroup" 
+                 data-type="horizontal">                      
+            
+                </div>
+                
+            </div>
+ 
+                
+            
+            </div>    
+            
+                      
+        
+      
+    </form>
+    </body>
+
+</html> 
+
+
+
+
+
+
+

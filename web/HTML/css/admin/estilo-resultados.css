@@ -1,0 +1,180 @@
+
+
+
+body{
+	/*dimension*/
+
+	height: 100%;
+	width:100%;
+
+	/*fondo*/
+	background: url(../../imagenes/fondo.jpg) no-repeat center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	/*ajuste de pantalla*/
+	-webkit-background-size: 100% 100%; /*safari y chrome*/
+	-moz-background-size: 100% 100%;/*mozilla*/
+	-o-background-size: 100% 100%;/* opera*/
+	background-size: 100% 100%; /*w3c*/
+	padding-bottom:40px;    /* Altura del footer */
+}
+
+.barra_vertical{
+    position: absolute;
+float:left;
+border-left: 2px solid #999999; 
+width:2px;
+height:200px;
+}
+
+table{
+border:none;
+}
+
+img{
+    width  : 48px;
+    height : 48px;
+   
+    margin: auto;
+}
+
+
+td{
+text-align: center;
+font-family: sans-serif;
+color:white;
+font-size: 2em;
+}
+
+.thIzq{
+text-align: right;
+font-family: sans-serif;
+color:rgb(0, 216, 255);
+font-size: 2em;
+padding-left: 1em;
+}
+
+.thDer{
+text-align: left;
+font-family: sans-serif;
+color:rgb(0, 216, 255);
+font-size: 2em;
+padding-right: 1em;
+}
+
+.estitloCrews{
+background-color: #170404;
+
+}
+.estiloh3{
+background-color: black;
+color:white;
+font-family: helvetica;
+font-size: 2em;
+    text-align: center;
+}
+.tituloJuez{
+    background-color: #044062;
+    text-align: center;
+    font: sans-serif;
+    
+}
+
+.valorJuez{
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    font: sans-serif;
+    
+}
+
+
+
+.estiloTitulo{
+background-color: black;
+color:white;
+font-family: helvetica;
+font-size: 3em;
+    text-align: center;
+}
+.estiloh2{
+background-color: black;
+color:white;
+font-family: helvetica;
+font-size: 2em;
+    text-align: center;
+}
+#contenedorPrincipal{
+background-color: gray;
+
+}
+
+.alinearIzq{
+   text-align: left;
+    padding-left: 1em;
+    
+}
+
+.alinearDer{
+    
+   text-align: right;
+      padding-right: 1em;
+}
+
+#divCentro{
+    text-align:center;
+    width:80%;
+    position:absolute;
+    top:20%;
+    left:10%;
+    margin-left:auto; /* width / -2 */
+    
+     background-color: rgba(0, 0, 0, 0);
+
+
+}
+
+.boton{
+  
+	-moz-box-shadow:inset 0px 34px 0px -15px #044062;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #044062;
+	box-shadow:inset 0px 34px 0px -15px #044062;
+	background-color:rgba(4, 62, 98, 0.91);
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:8px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+    position: fixed;
+    top:26px;
+    right: 1px;
+}
+.boton:hover {
+	background-color:rgb(4, 51, 98);
+}
+
+
+
+
+
+.centro{
+   width: 15%
+      
+}
+
+#divDerecha{
+    text-align:center;
+width:33.33%;
+    height:100%;
+    position:absolute;
+    top:50%;
+    left:100%;
+    margin-left:-450px; /* width / -2 */
+    margin-top:-200px;
+     background-color: rgba(0, 0, 0, 0.2);
+}

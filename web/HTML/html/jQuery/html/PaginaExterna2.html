@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <!-- Adaptar a la version movil -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=no">    
+        <!-- Archivos necesarios para trabajar con el framework -->
+    <link rel="stylesheet" type="text/css" href="../jqm/jquery.mobile-1.4.2.css">
+    <script type="text/javascript" src="../jquery-2.1.0.min.js"></script>    
+    <script type="text/javascript" src="../jqm/jquery.mobile-1.4.2.js"></script>           
+    </head>
+    
+    <body>
+        <div data-role="page">
+            
+            <!-- CABECERA -->
+            <div data-role="header" data-theme="b">
+                <h1>PAGINA EXTERNA DE PRUEBA</h1>
+            
+            </div>
+            <!-- CONTENIDO -->
+            <div data-role="content" data-theme="e">
+                <p>Esta es la segunda pagina</p>
+                <a href="cursoMobile.html" data-role="button" data-theme="a" data-inline="true" data-transition="slidedown">Ir a la pagina principal</a>
+                <a href="cursoMobile.html" data-role="button" data-theme="a" data-inline="true" data-rel="back" >Retornar</a>
+            </div>   
+            <!-- PIE DE PAGINA -->
+           <div data-role="footer" data-theme="b" class="ui-bar" data-position="fixed" data-id="pieFijo">
+                <h2>Esto es un pie de pagina</h2>
+                <div data-role="controlgroup" data-type="horizontal">              
+                   <a href="#pagina2" data-role="button" data-theme="a" data-inline="true" data-theme="b" data-icon="plus">Pagina 2</a>
+                   <a href="#confirmar" data-role="button" data-theme="b" data-inline="true" data-transition="Flip" data-rel="dialog" data-icon="delete">Eliminar</a>
+                </div>
+                
+            </div>   
+            
+        
+        
+        </div>
+    
+    </body>
+
+</html>

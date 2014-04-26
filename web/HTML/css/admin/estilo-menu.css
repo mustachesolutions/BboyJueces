@@ -1,0 +1,127 @@
+#cssmenu {
+  border: none;
+  border: 0px;
+  margin: 0px;
+  padding: 20px 18em 0px;
+  font: 67.5%  Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: 850px;
+  text-align: right;
+}
+#cssmenu ul {
+  background: rgba(33,33,33,0.95);
+  height: 35px;
+  list-style: none;
+  margin: 0;
+
+  
+/*Propiedades del borde de la barra de menu*/
+border-radius: 3px;
+padding: 0px 5em 0em;
+border-right-style: dotted;
+border-left-style: dotted;
+
+
+/*sombras*/
+  -webkit-box-shadow: 2px 2px 6px #888; /*safari y chrome*/
+  -moz-box-shadow: 2px 2px 6px #888; /*mozilla*/
+  box-shadow: 2px 2px 6px #888; /*todos los demas*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color='#888888')"; /* IE 8 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=6, Direction=135, Color='#888888'); /* IE 5.5 - 7 */
+  overflow:hidden; /*para que los link no salgan de la lista*/
+
+
+}
+#cssmenu li {
+  float: left;
+  /*Este padding es para la separacion en cada submenu*/
+  padding: 0px;
+
+
+}
+#cssmenu li a {
+  background: rgba(33,33,33,0) ;
+  display: block;
+  font-weight: normal;
+  line-height: 35px;
+  margin: 0px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+
+    /*transicion*/
+  -webkit-transition: all 0.3s ease-out; /*safari y chrome*/
+  transition: all 0.3s ease-out;/*w3c*/
+  -o-transition:all 0.3s ease-out;  /* Opera */
+  -moz-transition:all 0.3s ease-out;  /* Mozilla Firefox */
+  -ms-transition:all 0.3s ease-out;   /* Internet Explorer */
+}
+#cssmenu > ul > li > a {
+  color: #ffffff;
+}
+#cssmenu ul ul a {
+  color: #cccccc;
+}
+#cssmenu li > a:hover,
+#cssmenu ul li:hover > a {
+  background: #0781ad ;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#cssmenu li ul {
+  background: #333333;
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 225px;
+  z-index: 200;
+  /*top:1em;
+	/*left:0;*/
+
+}
+#cssmenu li:hover ul {
+  display: block;
+}
+#cssmenu li li {
+ 
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 225px;
+}
+#cssmenu li:hover li a {
+  background: none;
+}
+#cssmenu li ul a {
+  display: block;
+  height: 35px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+#cssmenu li ul a:hover,
+#cssmenu li ul li:hover > a {
+  background: #0781ad ;
+  border: 0px;
+  color: #ffffff;
+  text-decoration: none;
+}
+#cssmenu p {
+  clear: left;
+}
+
+#cssmenu li a.icon-home {
+   
+    border: none;
+    display: block;
+    width: 128px;
+    height: 128px;
+ 
+}
